@@ -1,42 +1,50 @@
-# Whoobe
+# vue-npmpackage
 
-Whoobe, *Web Html Object Oriented Blocks Editor*, is a visual block builder to create landing pages with full design control.
+A simple vue application to to retrieve iterative dependencies of a npm package.
 
 ## Demo
 
-[Whoobe Studio](https://whoobe-studio-demo.vercel.app)
+[Demo](https://vue-npmpackage.vercel.app/)
 
 
-## Website
+## Getting Started
 
-[Whoobe Website](https://whoobe.vercel.app)
+- Clone repository
+
+- Create .env file and add the following
+
+```
+VUE_APP_API_URL=__api_url__
+```
+
+- Dev command
+
+```
+npm run serve
+```
+
+- Build
+
+```
+npm run build
+```
+
+## Info
+
+Application is based on 2 components:
+
+- ./src/components/Package.vue (search package)
+- ./src/components/PackageTree.vue (reiterative)
+
+#### Package.vue
+
+Search NPM Package by name and version.
+First search 2 levels iterative dependencies.
+
+#### PackageTree.vue
+
+Reiterative component to build a complete tree view. 
+Click on any dependency to get iterative dependencies (2 levels)
 
 
-## Docs
-[Documentation](https://whoobe-docs.vercel.app)
-
-### Info
-
-Version: alpha-version 0.0.1
-
-Release date: May 2021
-
-Author: A. Nardone
-
-Github : https://github.com/swina/whoobe-studio-alpha-01
-
-License : MIT 
-
-
-### Last updates
-
-- Multiple tabs
-- Iconify support with access to +80.000 icons
-- Static page generator based on Vitejs
-- Import media from Pixabay, upload to Cloudinary, import from URL
-- Snipcart plugin integrated with products manager and frontsore plugin
-
-### Issues 
-
-Use the Github repo to open an issue https://github.com/swina/whoobe-studio-alpha-01
 
